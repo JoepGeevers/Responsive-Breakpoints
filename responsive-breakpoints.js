@@ -1,6 +1,6 @@
 (function() {
   
-  var id = "responsive-breakpoints-media-query-listener";
+  var id = "responsive-breakpoints";
   var sizes = ["xs", "sm", "md", "lg", 'xl'];
   var stored = "";
 
@@ -15,7 +15,7 @@
 
     if (stored !== actual) {
       stored = actual;
-      Array.prototype.filter.call(document.getElementsByClassName("responsive-breakpoints"), function(element) {
+      Array.prototype.filter.call(document.getElementsByClassName(id), function(element) {
         setCurrentScreenSize(actual, element);
       });
     }
