@@ -13,7 +13,7 @@ I need some padding to a specific element when bootstrap screen size is md
 # Usage
 
 ```
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="responsive-breakpoints.js"></script>
 <div class="responsive-breakpoints"></div>
 ```
 
