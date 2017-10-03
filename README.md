@@ -14,15 +14,15 @@ I need some padding to a specific element when bootstrap screen size is md
 
 include responsive-breakpoints.js
 
-<div class="responsive-breakpoints"></div>
+'<div class="responsive-breakpoints"></div>
 
 This div will now automagically get bootstrap screensizes as classes:
 
-<div class="responsive-breakpoints xs"></div>
-<div class="responsive-breakpoints sm"></div>
-<div class="responsive-breakpoints md"></div>
-<div class="responsive-breakpoints lg"></div>
-<div class="responsive-breakpoints xl"></div>
+'<div class="responsive-breakpoints xs"></div>
+'<div class="responsive-breakpoints sm"></div>
+'<div class="responsive-breakpoints md"></div>
+'<div class="responsive-breakpoints lg"></div>
+'<div class="responsive-breakpoints xl"></div>
 
 You can now style this element specifically:
 
