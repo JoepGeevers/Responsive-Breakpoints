@@ -27,10 +27,12 @@ This div will now automagically get bootstrap screensizes as classes:
 ```
 
 You can now style this element specifically:
-
+ 
+ ```
 div.md {
   padding-top: 4px;
 }
+```
 
 # Live example
 
