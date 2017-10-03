@@ -15,7 +15,7 @@
 
     if (stored !== actual) {
       stored = actual;
-      Array.prototype.filter.call(document.getElementsByClassName("bs-ss"), function(element) {
+      Array.prototype.filter.call(document.getElementsByClassName("responsive-breakpoints"), function(element) {
         setCurrentScreenSize(actual, element);
       });
     }
