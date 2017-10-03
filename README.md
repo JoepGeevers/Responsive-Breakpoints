@@ -12,9 +12,10 @@ I need some padding to a specific element when bootstrap screen size is md
 
 # Usage
 
-include responsive-breakpoints.js
-
-`<div class="responsive-breakpoints"></div>`
+```
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<div class="responsive-breakpoints"></div>
+```
 
 This div will now automagically get bootstrap screensizes as classes:
 
