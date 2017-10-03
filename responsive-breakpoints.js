@@ -4,13 +4,12 @@
   var sizes = ["xs", "sm", "md", "lg", 'xl'];
   var stored = "";
 
-      document.getElementsByTagName("BODY")[0]
+  document.getElementsByTagName("BODY")[0]
       .insertAdjacentHTML(
       'beforeend',
       '<div id="'+id+'" style="display: none;"><div class="visible-xs-block"></div><div class="visible-sm-block"></div><div class="visible-md-block"></div><div class="visible-lg-block"></div></div>');
 
-  window.setInterval(function() {
-        
+  window.setInterval(function() {        
     var actual = getActualScreenSize(id);
 
     if (stored !== actual) {
@@ -42,4 +41,4 @@
       }
     });
   }
-})();
+})(); 
