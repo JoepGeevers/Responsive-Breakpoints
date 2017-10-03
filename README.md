@@ -1,5 +1,5 @@
 # Responsive-Breakpoints
-Library to bring bootstrap screen sizes (xs sm md lg xl) to your html elements class.
+Library to bring bootstrap screen sizes `xs sm md lg xl` to your html elements class.
 
 # Problem
 I need some padding to a specific element when bootstrap screen size is md
