@@ -4,13 +4,13 @@ Library to bring bootstrap screen sizes (xs sm md lg xl) to your html elements c
 # Problem
 I need some padding to a specific element when bootstrap screen size is md
 
-#Solutions
+# Solutions
 
 1. Use media query. But that means replicating pixels
 2. Use mixins. But that means recompiling bootstrap css
 3. Use *Responsive-Breakpoints*
 
-#Example
+# Usage
 
 include responsive-breakpoints.js
 
@@ -30,6 +30,6 @@ div.md {
   padding-top: 4px;
 }
 
-See also:
+# Live example
 
 https://codepen.io/HerasHackwork/pen/rGGNEK?editors=1111
