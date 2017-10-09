@@ -1,24 +1,24 @@
 (function() {
-  
   var id = "responsive-breakpoints";
-  var sizes = ["xs", "sm", "md", "lg", 'xl'];
+  var sizes = ["xs", "sm", "md", "lg", "xl"];
   var stored = "";
 
-  document.getElementsByTagName("BODY")[0]
-      .insertAdjacentHTML(
-      'beforeend',
-      '<div id="'+id+'" style="display: none;"><div class="visible-xs-block"></div><div class="visible-sm-block"></div><div class="visible-md-block"></div><div class="visible-lg-block"></div></div>');
+  writeHtmlElementsToPoll(id, sizes);
 
-  window.setInterval(function() {        
+  window.setInterval(pollScreenSize, 100);
+
+  function pollScreenSize() {
     var actual = getActualScreenSize(id);
 
     if (stored !== actual) {
       stored = actual;
-      Array.prototype.filter.call(document.getElementsByClassName(id), function(element) {
+      Array.prototype.filter.call(document.getElementsByClassName(id), function(
+        element
+      ) {
         setCurrentScreenSize(actual, element);
       });
     }
-  }, 100);
+  }
 
   function getActualScreenSize(id) {
     return Array.prototype.slice
@@ -41,4 +41,20 @@
       }
     });
   }
-})(); 
+
+  function writeHtmlElementsToPoll(id, sizes) {
+    var children = sizes
+      .map(function(size) {
+        return `<div class="visible-${size}-block"></div>`;
+      })
+      .reduce(function(sum, value) {
+        return sum + value;
+      });
+
+    var parent = `<div id="${id}" style="display: none;">${children}</div>`;
+
+    document
+      .getElementsByTagName("BODY")[0]
+      .insertAdjacentHTML("beforeend", parent);
+  }
+})();
