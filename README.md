@@ -37,4 +37,4 @@ div.md {
 
 # Live example
 
-https://codepen.io/HerasHackwork/pen/rGGNEK?editors=1111
+https://codepen.io/HerasHackwork/pen/rGGNEK
